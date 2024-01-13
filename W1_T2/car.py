@@ -1,12 +1,11 @@
-# person.py
-class Person:
-    first_name:str
-    last_name:str
-    def __init__(self, first_name, last_name):
-        self.first_name = first_name
-        self.last_name = last_name
+class Car:
+    engine_on: bool
+    color: str
+    def __init__(self, color) -> None:
+        self.engine_on = False
+        self.color = color
+        return None
 
-    def fullname(self):
-        full_name = f"{self.first_name} {self.last_name}"
-        print(full_name)
+    def start(self) -> None:
+        print(f"{self.color} car started.")
         return None
